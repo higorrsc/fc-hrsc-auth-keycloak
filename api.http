@@ -1,3 +1,4 @@
+### Gerando Access Token
 POST http://localhost:8080/realms/fullcycle-realm/protocol/openid-connect/token
 Content-Type: application/x-www-form-urlencoded
 
@@ -5,3 +6,13 @@ username=user@user.com
 &password=secret
 &grant_type=password
 &client_id=fullcycle-client
+
+### Gerando Access Token e ID Token
+POST http://localhost:8080/realms/fullcycle-realm/protocol/openid-connect/token
+Content-Type: application/x-www-form-urlencoded
+
+username=user@user.com
+&password=secret
+&grant_type=password
+&client_id=fullcycle-client
+&scope=openid
