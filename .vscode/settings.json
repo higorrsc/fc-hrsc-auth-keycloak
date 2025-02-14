@@ -5,6 +5,7 @@
     "healthcheck",
     "jdbc",
     "mysql",
-    "mysqladmin"
+    "mysqladmin",
+    "seccomp"
   ]
 }

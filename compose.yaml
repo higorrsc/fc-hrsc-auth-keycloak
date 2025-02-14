@@ -22,8 +22,10 @@ services:
     environment:
       - MYSQL_ROOT_PASSWORD=root
       - MYSQL_DATABASE=keycloak
+    security_opt:
+      - seccomp:unconfined
     healthcheck:
       test: [ "CMD", "mysqladmin", "ping", "-h", "localhost" ]
-      interval: 10s
+      interval: 5s
       timeout: 10s
       retries: 3
