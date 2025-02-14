@@ -4,6 +4,7 @@
     "debian",
     "healthcheck",
     "jdbc",
+    "Multifator",
     "mysql",
     "mysqladmin",
     "seccomp"
