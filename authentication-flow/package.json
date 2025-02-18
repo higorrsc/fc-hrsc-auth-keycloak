@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon --exec tsx index.ts"
+    "authorization-code": "nodemon --exec tsx ./authorization-code-flow/src/index.ts"
   },
   "keywords": [],
   "author": "",

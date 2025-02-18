@@ -2,12 +2,14 @@
   "cSpell.words": [
     "dbdata",
     "debian",
+    "enduml",
     "fullcycle",
     "healthcheck",
     "jdbc",
     "Multifator",
     "mysql",
     "mysqladmin",
-    "seccomp"
+    "seccomp",
+    "startuml"
   ]
 }
