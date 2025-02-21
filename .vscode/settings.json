@@ -6,6 +6,7 @@
     "fullcycle",
     "healthcheck",
     "jdbc",
+    "jose",
     "jsons",
     "Multifator",
     "mysql",

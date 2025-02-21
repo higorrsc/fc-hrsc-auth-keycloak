@@ -13,8 +13,8 @@ export function makeLoginUrl() {
     client_id: 'fullcycle-client',
     redirect_uri: 'http://localhost:3000/callback',
     response_type: 'token id_token',
-    nonce: nonce,
-    state: state
+    nonce,
+    state
   })
 
   return `http://localhost:8080/realms/fullcycle-realm/protocol/openid-connect/auth?${loginUrlParams.toString()}`
@@ -28,15 +28,12 @@ export function login(accessToken: string, idToken: string, state: string) {
 
   let decodedAccessToken = null
   let decodedIdToken = null
+
   try {
     decodedAccessToken = decodeJwt(accessToken)
     decodedIdToken = decodeJwt(idToken)
   } catch (e) {
-    throw new Error('Invalid token')
-  }
-
-  if (decodedAccessToken.nonce !== Cookies.get('nonce')) {
-    throw new Error('Invalid nonce')
+    throw new Error(`Invalid token: ${e}`)
   }
 
   if (decodedIdToken.nonce !== Cookies.get('nonce')) {

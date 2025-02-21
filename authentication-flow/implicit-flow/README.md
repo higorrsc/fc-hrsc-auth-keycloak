@@ -20,4 +20,4 @@ response_type=token ou response_type=token id_token
 
 ## A hashtag é acrescentada ao redirecionamento
 
-http://localhost:3000/callback#state=YKWruxpK9QzU3vwOi5IxWg%3D%3D&session_state=593006ef-0a13-4472-bfef-5f4776fe3441&access_token=XXXXX&id_token=XXXXX&token_type=Bearer&expires_in=900
+<http://localhost:3000/callback#state=YKWruxpK9QzU3vwOi5IxWg%3D%3D&session_state=593006ef-0a13-4472-bfef-5f4776fe3441&access_token=XXXXX&id_token=XXXXX&token_type=Bearer&expires_in=900>
