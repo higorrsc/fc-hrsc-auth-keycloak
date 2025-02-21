@@ -12,11 +12,11 @@ type AuthContextProps = {
 const initContextData: AuthContextProps = {
   auth: null,
   makeLoginUrl: utils.makeLoginUrl,
-  //@ts-expect-error - this is a mock function
 
+  //@ts-expect-error - this is a mock function
   makeLogoutUrl: () => {},
-  //@ts-expect-error - this is a mock function
 
+  //@ts-expect-error - this is a mock function
   login: () => {}
 }
 
