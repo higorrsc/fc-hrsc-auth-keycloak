@@ -7,7 +7,7 @@ export function Admin() {
   return (
     <div>
       <h1>Admin</h1>
-      <pre>{JSON.stringify(auth)}</pre>
+      <pre>{JSON.stringify(auth, null, 2)}</pre>
     </div>
   )
 }
