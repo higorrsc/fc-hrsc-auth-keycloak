@@ -79,13 +79,6 @@ export function login(
     throw new Error('Invalid nonce')
   }
 
-  if (
-    decodedRefreshToken &&
-    decodedRefreshToken.nonce !== Cookies.get('nonce')
-  ) {
-    throw new Error('Invalid nonce')
-  }
-
   Cookies.set('access_token', accessToken)
   if (idToken) {
     Cookies.set('id_token', idToken)
