@@ -5,7 +5,8 @@
   "scripts": {
     "authorization-code": "nodemon --exec tsx ./authorization-code-flow/src/index.ts",
     "implicit": "cd implicit-flow && npm run dev",
-    "hybrid": "cd hybrid-flow && npm run dev"
+    "hybrid": "cd hybrid-flow && npm run dev",
+    "resource-owner": "nodemon --exec tsx ./resource-owner-password-credentials-flow/src/index.ts"
   },
   "workspaces": [
     "implicit-flow",
